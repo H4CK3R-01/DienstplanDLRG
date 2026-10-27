@@ -28,9 +28,9 @@ services:
       DB_CONNECTION: mysql
       DB_HOST: mariadb
       DB_PORT: 3306
-      DB_DATABASE: dienstplan
-      DB_USERNAME: dienstplan
-      DB_PASSWORD: dienstplan
+      DB_DATABASE: dlrgdienstplan-dev
+      DB_USERNAME: dlrgdienstplan-dev
+      DB_PASSWORD: password
 
       REDIS_HOST: redis
       REDIS_PORT: 6379
@@ -64,9 +64,9 @@ services:
     image: mariadb:11.8
     environment:
       MARIADB_ROOT_PASSWORD: root
-      MARIADB_DATABASE: dienstplan
-      MARIADB_USER: dienstplan
-      MARIADB_PASSWORD: dienstplan
+      MARIADB_DATABASE: dlrgdienstplan-dev
+      MARIADB_USER: dlrgdienstplan-dev
+      MARIADB_PASSWORD: password
     volumes:
       - mariadb-data:/var/lib/mysql
     ports:
